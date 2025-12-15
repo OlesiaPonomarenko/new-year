@@ -1,9 +1,13 @@
 body {
     font-family: "Montserrat", sans-serif;
-    background-image: url(./img/santa.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: fill;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("./img/santa.jpeg") center / cover no-repeat;
+  z-index: -1;
 }
 
 
@@ -84,6 +88,7 @@ button {
 }
 
 @media all and (max-width: 800px) {
+    
     h1 {
      font-size: 40px;   
     }
