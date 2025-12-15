@@ -1,5 +1,5 @@
 function christmasCountdown () {
-    const christmasDay = (new Date('December 25 2025 00:00'));
+    const christmasDay = (new Date('December 25 2025 15:20'));
     const now = new Date();
     const diff = christmasDay - now;
     const msInSecond = 1000;
